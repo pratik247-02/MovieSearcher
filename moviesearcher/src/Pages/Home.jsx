@@ -13,8 +13,8 @@ const [search, setSearch] = useState('')
 
   return (
 
-    <div>
-        <form>
+    <div className='home'>
+        <form onSubmit={HandleSearch} className="search-form">
             <input type="text"
                    placeholder="Search for a movie" 
                    className='search-bar'
