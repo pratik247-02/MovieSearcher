@@ -4,7 +4,7 @@ import MovieCard from './Components/MovieCard'
 import Home from './Pages/Home';
 import Favs from './Pages/Favs';
 import Navbar from './Components/Navbar'
-import './App.css'
+import './css/App.css'
 
 function App() {
   return (

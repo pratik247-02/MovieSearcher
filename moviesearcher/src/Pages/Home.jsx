@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import MovieCard from '../Components/MovieCard'
+import '../css/Home.css'
 
 const HandleSearch=(e)=>{
     e.preventDefault();
