@@ -4,12 +4,13 @@ import MovieCard from './Components/MovieCard'
 import Home from './Pages/Home';
 import Favs from './Pages/Favs';
 import Navbar from './Components/Navbar'
+import { MovieProvider } from './Context/MovieContext';
 import './css/App.css'
 
 function App() {
   return (
     <>
-    <div>
+    <MovieProvider>
       <Navbar/>
     <main className='main-content'>
       <Routes>
@@ -18,7 +19,7 @@ function App() {
         <Route path='/movie/:id' element={<MovieCard/>}/>
       </Routes>
     </main>
-    </div>
+    </MovieProvider>
     </>
   );
 }
